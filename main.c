@@ -9,5 +9,5 @@ int izracun(int x) {
 
 int main()
 {
-
+    int rezultat = izracun(STEVILO);
 }
