@@ -9,15 +9,5 @@ int izracun(int x) {
 
 int main()
 {
-   int rezultat = izracun(STEVILO);
-
-    #if STEVILO > 5
-    printf("Vecje od 5\n");
-    #else
-    printf("Manjse ali enako 5\n");
-    #endif
-
-    printf("Rezultat: %d\n", rezultat);
-
-    return 0;
+   
 }
