@@ -13,3 +13,15 @@ build: build_o
 
 run: build
 	./$(TARGET)
+
+build_i: main.c
+	$(CPP) main.c > main.i
+
+build_s: build_i
+	$(CC) $(CFLAGS) -S main.i -o main.s
+
+build_o: build_s
+	$(AS) --32 main.s -o main.o
+
+clean:
+	rm -f *.i *.s *.o $(TARGET)
